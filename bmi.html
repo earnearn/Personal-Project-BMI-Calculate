@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="/css/bmi.css">
+    <link rel="stylesheet" href="/css/styleabout.css">
+    <link rel="style" href="/css/style.css">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap">  <!-- ลิงก์ฟอนท์จาก Google -->
+    <!-- คำสั่งลบเส้นลิงก์ -->
+    <STYLE TYPE="TEXT/CSS">
+      A:link {
+      text-decoration:none;
+      }
+      A:visited {
+      text-decoration:none;
+      }
+    </STYLE>
+  </head>
+  <body>
+    <header>
+      <h1>BMI  Calculate</h1> <!-- แสดงชื่อเว็บ -->
+    </header>
+    <main>
+    <nav>  <!--  สร้างหน้าแถบเมนู aside -->
+        <a href="index.html"><h2 id="indee">Home</h2></a>
+        <a href="bmi.html"><h2 id="index">BMI</h2></a>
+        <a href="About.html"><h2 id="indee">About Us</h2></a>
+    </nav>
+    <div class="centerbmi"> 
+      <br>
+    <div class="container">
+      <div class="row">
+          <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">   <!--  สร้างเส้นแถบในการเลื่อนน้ำหนัก-->
+          <span ><h3 id="weight-val">20 kg</h3></span>  <!--  แสดงตัวเลขของ line 30 -->
+      </div>
+      <div class="row">
+          <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()"> <!--  สร้างเส้นแถบในการเลื่อนส่วนสูง-->
+          <span ><h3 id="height-val">100 cm</h3></span> <!--  แสดงตัวเลขของ line 35 -->
+      </div>
+
+      <p id="result">20.0</p>  <!--  แสดงค่า BMI ที่คำนวณแล้ว -->
+      <h3 id="category">Normal weight</h3>  <!--  แสดงค่า BMI ที่คำนวณแล้ว แต่บอกค่าที่เป็นตัวหนังสือแสดงสถานะ -->
+    </div>
+    <br>
+    </div>
+    </main>
+    <footer><h3>Produced and Design By Sakulrat</h3></footer> <!--สร้างfooter-->
+    <!--เชื่อมต่อScript-->
+    <script src="/scripts/bmi.js"></script>
+  </body>
+</html>

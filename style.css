@@ -1,0 +1,80 @@
+/* ทำให้หน้าเว็บเต็มหน้าจอ */
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* เรียกใช้ฟอนท์ Mali */
+body{
+    font-family: 'Mali', cursive;
+}
+/* ตกแต่งชื่อเว็บ */
+header{ 
+    background-color:#f4b39f; /* สีพื้นหลัง */
+    text-align: center; /* ตัวหนังสืออยู่ตรงกลาง */
+    margin: 0px;  /* ทำให้ไม่มีขอบด้านข้าง */
+    padding-top: 20px;  /* ทำให้ตัวหนังสือห่างจากขอบบน */
+    height: 90px;  /* ความสูงของกล่อง */
+}
+main{ /*responsive design*/
+    display: grid;  /* แบ่ง grid */
+    grid-template-columns: 20% 80%;  /* แบ่งพื้นที่เป็นคอลัมน์ */
+    height: 560px; /* ความสูงของกล่อง */
+}
+footer{
+    font-size: 1em; /* ขนาดตัวหนังสือ */
+    line-height: 50px; /* ความสูงของตัวหนังสือ */
+    margin:0px; /* ทำให้ไม่มีขอบด้านข้าง */
+    padding:10px; /* ทำให้ตัวหนังสือห่างจากขอบ */
+    background-color: #d3b8dd; /* สีพื้นหลัง */
+    text-align: center; /* ตัวหนังสืออยู่ตรงกลาง */
+}
+nav{ /*responsive design*/
+    display: grid;
+    grid-template-columns:100%;
+    background-color:#f1c6c6;
+    margin: 0px;
+    padding-top: 50px;
+    padding-left: 20%;
+    padding-bottom: 60%;
+    
+}
+#index{
+    color: #ff5757; /* ตัวหนังสือเป็นสีแดงเมื่อคลิ้ก */
+}
+#indee{
+    color: #ffffff; /* ตัวหนังสือเป็นสีขาวเมื่อคลิ้ก */
+}
+article{ /*responsive design*/
+    display: grid;
+    grid-template-rows:40% 60%; 
+    margin: 10px;
+}
+article div{   /* ตั้งค่า div ทั้งหมดใน article */
+    padding: 40px;
+}
+#s{
+    margin-bottom: 10px; /* ระยะความห่างของกล่อง */
+}
+#ss{
+    margin-right: 10px;
+}
+#sss{
+    padding: 10px;
+    padding-top: 20px;
+}
+section{ /*responsive design*/
+    display: grid;
+    grid-template-columns:50% 50%;
+    margin: 0px;
+}
+@media screen and (max-width:1000px) { /*responsive design ตั้งค่าการแสดงผลเมื่อน้าจอเล็กลง*/
+    main{ 
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 800px;
+    }
+   
+}

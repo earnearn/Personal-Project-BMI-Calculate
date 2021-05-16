@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #f8ffbe,
+        #fdffa2
+    );
+}
+/*  ตั้งค่า class */ 
+.container{  /*responsive design*/
+    background-color: #acdcfc;
+    margin: 5px;
+    margin-top: 10%;
+    padding: 40px 30px;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 25px 25px 30px rgba(0,0,0,0.15); /* เงาของกล่อง */ 
+}
+.row{
+    display: flex;  /*กำหนดการวางกล่องในแนวนอน*/ 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+.row span{ /* ความยาวเส้นแถบเลื่อน */
+    font-weight: 500;
+}
+input[type="range"]{ /* จุดที่ใช้เลื่อน */ /*responsive design*/
+    width: 70%;
+    height: 3.5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #4385b1;
+    border-radius: 3px;
+    outline: none;
+}
+input[type="range"]::-webkit-slider-thumb{ /*responsive design*/
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #1c1c1c;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#result{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #1b852c;
+}
+#category{
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+/* --------------------------------------------- */
+body{
+    font-family: 'Mali', cursive; /*เรียกใช้ตัวหนังสือ*/
+}
+header{
+    background-color:#f4b39f;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+    height: 90px;
+}
+main{  /*responsive design*/
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 560px;
+}
+footer{
+    font-size: 1em;
+    line-height: 50px;
+    margin:0px;
+    padding:10px;
+    background-color: #d3b8dd;
+    text-align: center;
+}
+nav{ /*responsive design*/
+    display: grid;
+    grid-template-columns:100%;
+    background-color:#f1c6c6;
+    margin: 0px;
+    padding-top: 50px;
+    padding-left: 20%;
+    padding-bottom: 60%;
+    
+}
+#index{
+    color: #ff5757;
+}
+#indee{
+    color: #ffffff;
+}
+.centerbmi{ /*responsive design*/
+    display: grid;
+    grid-template-columns:10% 80% 10%; 
+    margin: 10px;
+    padding: 10px 5px;
+}
+
+
